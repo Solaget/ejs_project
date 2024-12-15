@@ -1,0 +1,266 @@
+<%- include('layout') %>
+
+<div class="pt-[70px]">
+    <!-- Hero Section -->
+  <div
+    class="relative h-[400px] bg-cover bg-center flex items-center"
+    style="
+      background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2070');
+    "
+  >
+    <div class="absolute inset-0 bg-blue-900/70"></div>
+    <div class="container mx-auto px-6 relative">
+      <div class="max-w-2xl">
+        <h1 class="text-5xl font-bold text-white mb-6">
+          Let's Start a Conversation
+        </h1>
+        <p class="text-xl text-gray-200">
+          We're here to help and answer any questions you might have. We look
+          forward to hearing from you.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Cards -->
+  <div class="container mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-3 gap-8 mb-20">
+      <!-- Phone Card -->
+      <div
+        class="bg-white rounded-xl shadow-lg p-6 transform hover:-translate-y-1 transition-transform duration-300"
+      >
+        <div
+          class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-8 h-8 text-primary"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
+        <p class="text-gray-600 mb-4">Mon-Fri from 8am to 5pm</p>
+        <a
+          href="tel:+15551234567"
+          class="text-primary hover:text-blue-700 font-medium"
+          >+1 (555) 123-4567</a
+        >
+      </div>
+
+      <!-- Email Card -->
+      <div
+        class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition-transform duration-300"
+      >
+        <div
+          class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-8 h-8 text-primary"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Email</h3>
+        <p class="text-gray-600 mb-4">We'll respond within 24h</p>
+        <a
+          href="mailto:hello@company.com"
+          class="text-primary hover:text-primary-600 font-medium"
+          >hello@company.com</a
+        >
+      </div>
+
+      <!-- Office Card -->
+      <div
+        class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition-transform duration-300"
+      >
+        <div
+          class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-8 h-8 text-primary"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Office</h3>
+        <p class="text-gray-600 mb-4">Come say hello</p>
+        <p class="text-primary">
+          123 Innovation Drive<br />Tech Valley, CA 94043
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div class="grid md:grid-cols-5">
+        <!-- Form Info Section -->
+        <div
+          class="md:col-span-2 bg-gradient-to-br bg-primary p-12 text-white"
+        >
+          <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+          <p class="text-blue-100 mb-6">
+            Fill out the form and our team will get back to you within 24 hours.
+          </p>
+          <div class="space-y-4 mt-12">
+            <div class="flex items-center space-x-4">
+              <svg
+                class="w-6 h-6 text-blue-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                />
+              </svg>
+              <span>Your data is secure with us</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <svg
+                class="w-6 h-6 text-blue-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>24/7 Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="md:col-span-3 p-12 space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+                placeholder="John"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+              placeholder="john@example.com"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Subject</label
+            >
+            <input
+              type="text"
+              class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+              placeholder="How can we help?"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Message</label
+            >
+            <textarea
+              rows="4"
+              class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors resize-none"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-primary hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="h-[400px] bg-gray-100 relative">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6282365564086!2d-122.08624708469227!3d37.42199997982367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sPalo%20Alto%2C%20CA%2094304!5e0!3m2!1sen!2sus!4v1647434481001!5m2!1sen!2sus"
+      class="w-full h-full"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    >
+    </iframe>
+  </div>
+
+  <!-- Footer -->
+   <%- include('../partials/footer') %>
+</body>

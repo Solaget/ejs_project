@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narmul General Business PLC</title>
+    <link href="/styles/output.css" rel="stylesheet" />
+    <link href="/styles/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/aos.css" />
+  </head>
+  <body class="h-screen">
+    <!-- header -->
+    <%- include('../partials/header') %>
+
+    <!-- body here -->
+    <!-- ..... -->
+
+    <!-- AOS JavaScript -->
+    <script src="/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+          duration: 600, // Animation duration
+          offset: 100, // Offset from the top of the screen
+          easing: "ease-in-out", // Easing function
+          once: false, // Animate only once
+        });
+      });
+    </script>
+  </body>
+</html>
