@@ -2,6 +2,7 @@ import express, { Request, Response, NextFunction } from "express";
 import path from "path";
 import { products } from "./constants/products";
 import expressEjsLayouts from "express-ejs-layouts";
+import serverless from "serverless-http";
 
 const server = express();
 
@@ -56,5 +57,7 @@ server.use((req: Request, res: Response, next: NextFunction) => {
 
 server.listen(3000, () => {
   console.log("🚀 Server is running");
-  console.log(process.env.NODE_ENV);
 });
+
+// Export handler for Netlify
+export const handler = serverless(server);

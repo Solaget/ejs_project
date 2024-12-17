@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node ./dist/server.js",
     "dev": "nodemon src/server.ts",
     "build": "tsc",
     "build-tailwindcss": "tailwindcss build -i styles/tailwindcss.css -o assets/styles.css",
