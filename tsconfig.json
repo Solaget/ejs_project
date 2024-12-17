@@ -2,11 +2,20 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "rootDir": "./", // Set rootDir to the project root
+    "outDir": "./dist", // Output folder for compiled files
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,  
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "baseUrl": "./", // Base path for path aliases
+    "paths": {
+      "@constants/*": ["src/constants/*"],
+      "@views/*": ["src/views/*"],
+      "@public/*": ["src/public/*"]
+    }
+  },
+  "include": ["src/**/*", "netlify/functions/**/*"], // Include all relevant files
+  "exclude": ["node_modules", "dist"] // Exclude unnecessary folders
 }
