@@ -6,28 +6,27 @@
     <title>Narmul General Business PLC</title>
     <link href="/styles/output.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
+    <link href="/styles/toast.css" rel="stylesheet" />
     <link rel="stylesheet" href="/aos.css" />
   </head>
-  <body class="h-screen">
+  <body class="min-h-screen">
+    <!-- toast container -->
+    <div class="toast-container"></div>
+
     <!-- header -->
     <%- include('../partials/header') %>
 
     <!-- body here -->
-    <!-- ..... -->
+    <main><%- body %></main>
 
-    <!-- AOS JavaScript -->
+    <!-- footer section -->
+    <%- include('../partials/footer') %>
+
+    <!--JavaScript -->
     <script src="/aos.js"></script>
+    <script src="/script/toast.js"></script>
+    <script src="/script/main.js"></script>
 
     <!-- Initialize AOS -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        AOS.init({
-          duration: 600, // Animation duration
-          offset: 100, // Offset from the top of the screen
-          easing: "ease-in-out", // Easing function
-          once: false, // Animate only once
-        });
-      });
-    </script>
   </body>
 </html>
